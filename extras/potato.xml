@@ -31,8 +31,8 @@
   </project>
   <project name="hardware_qcom_sdm845_display"           path="hardware/qcom/sdm845/display"              remote="potato" />
   <project name="hardware_qcom_sdm845_media"             path="hardware/qcom/sdm845/media"                remote="potato" />
-  <project name="vendor_potato"                          path="vendor_potato"                             remote="potato-next" />
-  <project name="vendor_potato-prebuilts"                path="vendor_potato-prebuilts"                   remote="potato" clone-depth="1" />
+  <project name="vendor_potato"                          path="vendor/potato"                             remote="potato-next" />
+  <project name="vendor_potato-prebuilts"                path="vendor/potato-prebuilts"                   remote="potato" clone-depth="1" />
   <project name="vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr"  remote="potato" />
 
   <!-- QCOM CAF -->
