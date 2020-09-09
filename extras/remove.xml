@@ -2,6 +2,8 @@
 <manifest>
 
   <!-- Remove unused hardware repos -->
+  <remove-project name="platform/build" />
+  <remove-project name="platform/build/soong" />
   <remove-project name="platform/hardware/broadcom/libbt" />
   <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/bt" />
