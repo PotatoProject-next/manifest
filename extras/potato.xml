@@ -4,7 +4,7 @@
 
   <!-- Potato Repos -->
   <project name="bionic"        path="bionic"        remote="potato-next" />
-  <project name="build_make"        path="build/make"        remote="potato-next" groups="pdk" >
+  <project name="build_make"        path="build/make"        remote="potato-next" revision="dstaging-raj" groups="pdk" >
     <copyfile src="core/root.mk"         dest="Makefile" />
     <linkfile src="CleanSpec.mk"         dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -13,7 +13,7 @@
     <linkfile src="target"               dest="build/target" />
     <linkfile src="tools"                dest="build/tools" />
   </project>
-  <project name="build_soong" path="build/soong" remote="potato-next" groups="pdk,tradefed" >
+  <project name="build_soong" path="build/soong" remote="potato-next" revision="dstaging-raj" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -25,9 +25,13 @@
   <project name="frameworks_base"                        path="frameworks/base"                           remote="potato-next" />
   <project name="frameworks_opt_net_ims"                 path="frameworks/opt/net/ims"                    remote="potato-next" />
   <project name="frameworks_opt_net_wifi"                path="frameworks/opt/net/wifi"                   remote="potato-next" />
+  <project name="external_libcxx"            path="external/libcxx"               remote="potato-next" revision="dstaging-raj" />
   <project name="hardware_interfaces"                    path="hardware/interfaces"                       remote="potato-next" />
-  <project name="hardware_libhardware_legacy"            path="hardware/libhardware_legacy"               remote="potato-next" />
+  <project name="hardware_libhardware"            path="hardware/libhardware"               remote="potato-next" revision="dstaging-raj" />
+  <project name="hardware_libhardware_legacy"            path="hardware/libhardware_legacy"               remote="potato-next" revision="dstaging-raj" />
   <project name="hardware_qcom_bootctrl"                 path="hardware/qcom/bootctrl"                    remote="potato" />
+  <project name="hardware_knowles_athletico_sound_trigger_hal"            path="hardware/knowles/athletico/sound_trigger_hal"               remote="potato-next" revision="dstaging-raj" />
+
   <project name="hardware_qcom_power"                    path="hardware/qcom/power"                       remote="potato" />
   <project name="hardware_qcom_sdm845_bt"                path="hardware/qcom/sdm845/bt"                   remote="potato" />
   <project name="hardware_qcom_sdm845_data_ipacfg-mgr"   path="hardware/qcom/sdm845/data/ipacfg-mgr"      remote="potato" >
@@ -37,11 +41,16 @@
   <project name="hardware_qcom_sdm845_display"           path="hardware/qcom/sdm845/display"              remote="potato" />
   <project name="hardware_qcom_sdm845_media"             path="hardware/qcom/sdm845/media"                remote="potato" />
   <project name="prebuilts_abi-dumps_vndk"               path="prebuilts/abi-dumps/vndk"                  remote="potato-next" clone-depth="1" />
-  <project name="system_core"                            path="system/core"                               remote="potato-next" />
   <project name="system_netd"                            path="system/netd"                               remote="potato-next" />
+  <project name="system_core"                            path="system/core"                               remote="potato-next" revision="dstaging-raj" />
   <project name="vendor_potato"                          path="vendor/potato"                             remote="potato-next" />
   <project name="vendor_potato-prebuilts"                path="vendor/potato-prebuilts"                   remote="potato-next" clone-depth="1" />
   <project name="vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr"  remote="potato" />
+
+  <!-- fw repos -->
+  <project name="frameworks_av"           path="frameworks/av"              remote="potato-next" revision="dstaging-raj" />
+
+  <project name="tools_metalava"           path="tools/metalava"              remote="potato-next" revision="dstaging-raj" />
 
   <!-- QCOM CAF -->
   <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="potato-next" >
