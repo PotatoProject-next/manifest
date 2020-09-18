@@ -22,6 +22,9 @@
   <project name="device_qcom_sepolicy"                   path="device/qcom/sepolicy-legacy"               remote="potato" revision="croquette-release-legacy" />
   <project name="device_qcom_sepolicy"                   path="device/qcom/sepolicy-legacy-um"            remote="potato-next" revision="d-staging1-legacy-um" />
   <project name="external_selinux"                       path="external/selinux"                          remote="potato-next" />
+  <project name="frameworks_base"                        path="frameworks/base"                           remote="potato-next" />
+  <project name="frameworks_opt_net_ims"                 path="frameworks/opt/net/ims"                    remote="potato-next" />
+  <project name="frameworks_opt_net_wifi"                path="frameworks/opt/net/wifi"                   remote="potato-next" />
   <project name="hardware_interfaces"                    path="hardware/interfaces"                       remote="potato-next" />
   <project name="hardware_libhardware_legacy"            path="hardware/libhardware_legacy"               remote="potato-next" />
   <project name="hardware_qcom_bootctrl"                 path="hardware/qcom/bootctrl"                    remote="potato" />
@@ -35,6 +38,7 @@
   <project name="hardware_qcom_sdm845_media"             path="hardware/qcom/sdm845/media"                remote="potato" />
   <project name="prebuilts_abi-dumps_vndk"               path="prebuilts/abi-dumps/vndk"                  remote="potato-next" clone-depth="1" />
   <project name="system_core"                            path="system/core"                               remote="potato-next" />
+  <project name="system_netd"                            path="system/netd"                               remote="potato-next" />
   <project name="vendor_potato"                          path="vendor/potato"                             remote="potato-next" />
   <project name="vendor_potato-prebuilts"                path="vendor/potato-prebuilts"                   remote="potato-next" clone-depth="1" />
   <project name="vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr"  remote="potato" />
