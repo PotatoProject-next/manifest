@@ -4,6 +4,7 @@
   <remove-project name="platform/bootable/recovery" />
 
   <!-- Build -->
+  <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
 

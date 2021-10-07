@@ -2,6 +2,7 @@
 <manifest>
   <include name="extras/remove.xml" />
 
+  <project name="bionic"          path="bionic"           remote="potato-next" />
   <project name="build_make"      path="build/make"       remote="potato-next" groups="pdk" >
     <copyfile src="core/root.mk"         dest="Makefile" />
     <linkfile src="CleanSpec.mk"         dest="build/CleanSpec.mk" />
